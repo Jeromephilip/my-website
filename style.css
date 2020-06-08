@@ -1,0 +1,266 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/*index.html*/
+
+body {
+	background-color: rgb(81, 124, 218);
+}
+
+.name1 {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
+.name2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 4em;
+	color: white;
+}
+
+
+.image-top {
+	background-image: url(Images/mountain.jpg); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat, repeat;
+	padding: 300px;
+	text-align: center;
+}
+
+.box {
+	width: 300px;
+	border: 15px solid green;
+	padding: 50px;
+	margin: 20px;
+}
+
+.about {
+	width: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
+	margin-top: 5%;
+	margin-bottom: 7%;;
+	padding: 20px;
+	font-size: 2em;
+	text-align: center;
+}
+
+.extra-size {
+	font-size: large;
+}
+
+.my-container {
+	border: 2px solid black;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.contact {
+	font-size: 3em;
+	border: 1px dashed black;
+	text-align: center;
+}
+
+.contact-color {
+	color: black;
+}
+
+p {
+	color: white;
+}
+
+
+
+footer {
+	background-color:  rgb(84, 186, 245);
+	background-size: cover;
+	background-position: center;
+	padding: 50px
+}
+
+body nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	background-color: rgb(84, 186, 245);
+	width: 100%;
+}
+
+.logo {
+	background: -webkit-linear-gradient(#eee, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 30px;
+}
+
+.nav-links {
+	display: flex;
+	width: 35%;
+	justify-content: space-around; 
+}
+
+#no-underline {
+	text-decoration: none;
+}
+
+body nav ul li:hover{
+	transform: scale(1.5);
+}
+.nav-links li {
+	list-style: none;
+}
+.nav-links a {
+	color:white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	width: 25px;
+	height: 2px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	.nav-links {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	body {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: rgb(84, 186, 245);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translatex(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+
+	.name2 {
+		text-align: center;
+	}
+	.burger{
+		display: block;
+	}
+
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from{
+		opacity: 0;
+		transform: translate(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.footer-icons {
+	text-align: center;
+}
+
+.icons {
+	padding: 0px 20px 10px 20px;
+	font-size: 25px;
+	color: white;
+}
+
+footer div a i:hover {
+	transform: scale(1.5);
+}
+
+.footer-connect {
+	text-align: center;
+	color: white;
+}
+
+.left-footer-brand {
+	text-align: left;
+	color: cornsilk;
+	display: inline;
+}
+
+/*projects.html*/
+
+.experiences-title {
+	text-align: center;
+	padding: 50px;		
+}
+
+#experiences {
+	text-align: center;
+}
+
+#hobbies {
+	text-align: center;
+	padding: 30px;
+}
+
+.experience-image {
+	padding: 20px;
+	display: block;
+	border-radius: 35%;
+	margin-bottom: 30px;
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+	margin: auto auto;
+}
+
+.experience-description {
+	color: rgb(84, 186, 245);
+	font-weight: 700;
+}
+
+.col {
+	padding: 30px;
+	padding-right: 10px;
+}
